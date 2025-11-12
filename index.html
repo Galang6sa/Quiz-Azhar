@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuis Interaktif</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <h1 id="quizTitle">Kuis Interaktif</h1>
+      <p id="quizSubtitle">Uji pengetahuan Anda dengan kuis sederhana</p>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-container">
+      <div class="progress-bar">
+        <div class="progress" id="progressBar"></div>
+      </div>
+      <div class="progress-text" id="progressText">1/5</div>
+    </div>
+
+    <!-- Quiz -->
+    <div class="quiz-screen" id="quizScreen">
+      <div class="question-container">
+        <div class="question-number" id="questionNumber">Pertanyaan 1</div>
+        <div class="question-text" id="questionText">Memuat pertanyaan...</div>
+
+        <div class="options-container" id="optionsContainer"></div>
+
+        <div class="answer-feedback" id="answerFeedback">
+          <span id="feedbackText"></span>
+        </div>
+
+        <div class="explanation" id="explanation">
+          <div class="explanation-title">Penjelasan:</div>
+          <div id="explanationText"></div>
+        </div>
+      </div>
+
+      <div class="navigation">
+        <button class="btn btn-primary" id="submitBtn">Kirim Jawaban</button>
+        <button class="btn btn-secondary" id="nextBtn" style="display: none;">Lanjut</button>
+      </div>
+    </div>
+
+    <!-- Hasil -->
+    <div class="results-screen" id="resultsScreen">
+      <div class="results-icon" id="resultIcon">🎉</div>
+      <h2>Kuis Selesai!</h2>
+      <div class="score" id="finalScore">0/5</div>
+      <div class="score-text" id="scoreText">Menghitung hasil...</div>
+      <div class="feedback" id="feedback"></div>
+      <button class="btn btn-primary" id="restartBtn">Ulangi Kuis</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
